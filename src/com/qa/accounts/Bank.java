@@ -14,9 +14,13 @@ public class Bank {
 		accounts.add(acc);
 	}
 	
-	public void closeAccount(Account acc) {
+	public void closeAccount(int acctNum) {
 		for (Account acct: accounts) {
-			
+			// set the account to null, it will be auto garbage collected
+			if (acct.getAccountNumber() == acctNum) {
+				accounts.remove(acct);
+				break;
+			}
 		}
 	}
 	

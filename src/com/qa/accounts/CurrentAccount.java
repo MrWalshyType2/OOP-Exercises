@@ -11,4 +11,8 @@ public class CurrentAccount extends Account {
 	public double getOverdraftLimit() {
 		return this.overdraftLimit;
 	}
+	
+	public void setOverdraftLimit(double lim) {
+		this.overdraftLimit = lim;
+	}
 }
