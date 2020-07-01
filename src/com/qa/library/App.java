@@ -27,6 +27,8 @@ public class App {
 		someCelebs.add("Scarlett Johansson");
 		mainLibrary.addItem(new Magazine("Top Celebs", 3.00, false, someCelebs));
 		
+		mainLibrary.addItem(new Newspaper("The Daily Mail", 0.79, false, true));
+		
 		mainLibrary.registerPerson(new Person(Long.parseLong("07943654542"), "Fred Gherkin"));
 		mainLibrary.registerPerson(new Person(Long.parseLong("07933644562"), "Grok Gublin"));
 	}

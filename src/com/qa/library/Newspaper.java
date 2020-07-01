@@ -26,6 +26,6 @@ public class Newspaper extends Item implements Readable {
 	
 	@Override
 	public void reading() {
-		System.out.println("I am reading a magazine...");
+		System.out.println("I am reading a newspaper...");
 	}
 }
