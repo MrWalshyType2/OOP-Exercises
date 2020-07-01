@@ -1,4 +1,4 @@
-package doggo_competition;
+package com.qa.doggo_competition;
 
 import java.util.ArrayList;
 import java.util.List;
