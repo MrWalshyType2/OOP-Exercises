@@ -5,7 +5,7 @@ import java.util.List;
 
 public class App {
 	public static void main(String args[]) {
-		int input = 27;
+		int input = 27; // This is the doggos placement
 		List<Integer> st = new ArrayList<>();
 		List<Integer> nd = new ArrayList<>();
 		List<Integer> rd = new ArrayList<>();
@@ -43,7 +43,6 @@ public class App {
 			} else if (th.contains(Integer.valueOf(lastNum))) {
 				System.out.println(num + "th");
 			}
-
 		}
 	}
 }
