@@ -4,17 +4,19 @@ public class Chair {
 	private static int idCount = 1;
 	private int id;
 	private int weightCapacity;
-	private int porridgeTemperature;
-	
+	private Porridge porridge;
+	private Light light;
+
 	public Chair() {
 		this.id = idCount;
 		idCount++;
 	}
-	
-	public Chair(int weightCapacity, int porridgeTemperature) {
+
+	public Chair(int weightCapacity, Porridge porridge, Light light) {
 		this.id = idCount;
 		this.weightCapacity = weightCapacity;
-		this.porridgeTemperature = porridgeTemperature;
+		this.porridge = porridge;
+		this.light = light;
 		idCount++;
 	}
 
@@ -30,13 +32,20 @@ public class Chair {
 		this.weightCapacity = weightCapacity;
 	}
 
-	public int getPorridgeTemperature() {
-		return porridgeTemperature;
+	public Porridge getPorridge() {
+		return porridge;
 	}
 
-	public void setPorridgeTemperature(int porridgeTemperature) {
-		this.porridgeTemperature = porridgeTemperature;
+	public void setPorridge(Porridge porridge) {
+		this.porridge = porridge;
 	}
-	
-	
+
+	public Light getLight() {
+		return light;
+	}
+
+	public void setLight(Light light) {
+		this.light = light;
+	}
+
 }
